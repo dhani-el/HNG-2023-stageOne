@@ -1,0 +1,12 @@
+
+
+img{
+    width: 50vw;
+    height: auto;
+}
+
+@media(orientation:landscape){
+    img{
+        width: 20vw;
+    }
+}
