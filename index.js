@@ -11,12 +11,12 @@ function ParseDayToString(dayInNumber){
     }
 }
 const day = ParseDayToString( new Date().getDay());
-//function SpamUTC(){
-  //  setInterval(() => {
-     //   const UTCinMiliSeconds = new Date().getUTCMilliseconds();
-    //    document.getElementById("UTC").innerHTML = UTCinMiliSeconds;
+function SpamUTC(){
+   setInterval(() => {
+       const UTCinMiliSeconds = new Date().getUTCMilliseconds();
+       document.getElementById("UTC").innerHTML = UTCinMiliSeconds;
 
-  //  }, 1);
-//}
-//SpamUTC();
+   }, 1);
+}
+SpamUTC();
 const dayElement = document.getElementById("day").innerHTML = day;
