@@ -13,7 +13,7 @@ function ParseDayToString(dayInNumber){
 const day = ParseDayToString( new Date().getDay());
 function SpamUTC(){
    setInterval(() => {
-       const UTCinMiliSeconds = new Date().getUTCMilliseconds();
+        const UTCinMiliSeconds = Date.now();
        document.getElementById("UTC").innerHTML = UTCinMiliSeconds;
 
    }, 1);
