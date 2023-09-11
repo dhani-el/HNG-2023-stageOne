@@ -18,5 +18,5 @@ function SpamUTC(){
 
     }, 1);
 }
-SpamUTC();
+//SpamUTC();
 const dayElement = document.getElementById("day").innerHTML = day;
