@@ -11,6 +11,12 @@ function ParseDayToString(dayInNumber){
     }
 }
 const day = ParseDayToString( new Date().getDay());
-const UTCinMiliSeconds = new Date().getUTCMilliseconds();
+function SpamUTC(){
+    setInterval(() => {
+        const UTCinMiliSeconds = new Date().getUTCMilliseconds();
+        document.getElementById("UTC").innerHTML = UTCinMiliSeconds;
+
+    }, 1);
+}
+SpamUTC();
 const dayElement = document.getElementById("day").innerHTML = day;
-document.getElementById("UTC").innerHTML = UTCinMiliSeconds;
