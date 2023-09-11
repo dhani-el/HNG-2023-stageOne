@@ -14,9 +14,9 @@ const day = ParseDayToString( new Date().getDay());
 function SpamUTC(){
    setInterval(() => {
        const UTCinMiliSeconds = new Date().getUTCMilliseconds();
-       document.getElementById("UTC").innerHTML = UTCinMiliSeconds;
+       document.querySelector('[data-testid="currentUTCTime"]').innerHTML = UTCinMiliSeconds;
 
    }, 1);
 }
 SpamUTC();
-const dayElement = document.getElementById("day").innerHTML = day;
+const dayElement = document.querySelector('[data-testid="currentDayOfTheWeek"]').innerHTML = day;
